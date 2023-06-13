@@ -1,4 +1,3 @@
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Card from "./ui/Card";
 import classes from "./WeatherItem.module.css";
 
@@ -11,9 +10,9 @@ function WeatherItem(props) {
         </div>
         <div className={classes.content}>
           <h3>Today</h3>
-          <LocationOnIcon>
-            <h1>{props.city}</h1>
-          </LocationOnIcon>
+
+          <h1>{props.city}</h1>
+
           <h3>{props.temp} &deg;C</h3>
           <img
             src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`}
